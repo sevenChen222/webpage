@@ -1,0 +1,159 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="../style/calendar2.css">
+		<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+
+		<title>我是标题</title>
+	</head>
+	<body>
+		<img class='bg-wall' src="../assets/bg-wall.png">
+
+		<!--移动范围-->
+		<div id="box"></div>
+
+		<!--日历本体-->
+		<div class="A">
+			<img id='A1' src="../assets/A1.png" height="200px" width="160px">
+			<img id='A2' src="../assets/A2.png" height="200px" width="160px">
+			<img id='A3' src="../assets/A3.png" height="200px" width="160px">
+			<img id='A4' src="../assets/A4.png" height="200px" width="160px">
+			<img id='A5' src="../assets/A5.png" height="200px" width="160px">
+			<img id='A6' src="../assets/A6.png" height="200px" width="160px">
+			<img id='A7' src="../assets/A7.png" height="200px" width="160px">
+			<img id='A8' src="../assets/A8.png" height="200px" width="160px">
+			<img id='A9' src="../assets/A9.png" height="200px" width="160px">
+			<img id='A10' src="../assets/A10.png" height="200px" width="160px">
+			<img id='A11' src="../assets/A11.png" height="200px" width="160px">
+			<img id='A12' src="../assets/A12.png" height="200px" width="160px">
+			<img id='A13' src="../assets/A13.png" height="200px" width="160px">
+			<img id='A14' src="../assets/A14.png" height="200px" width="160px">
+			<img id='A15' src="../assets/A15.png" height="200px" width="160px">
+			<img id='A16' src="../assets/A16.png" height="200px" width="160px">
+			<img id='A17' src="../assets/A17.png" height="200px" width="160px">
+			<img id='A18' src="../assets/A18.png" height="200px" width="160px">
+			<img id='A19' src="../assets/A19.png" height="200px" width="160px">
+			<img id='A20' src="../assets/A20.png" height="200px" width="160px">
+			<img id='A21' src="../assets/A21.png" height="200px" width="160px">
+			<img id='A22' src="../assets/A22.png" height="200px" width="160px">
+			<img id='A23' src="../assets/A23.png" height="200px" width="160px">
+			<img id='A24' src="../assets/A24.png" height="200px" width="160px">
+			<img id='A25' src="../assets/A25.png" height="200px" width="160px">
+			<img id='A26' src="../assets/A26.png" height="200px" width="160px">
+			<img id='A27' src="../assets/A27.png" height="200px" width="160px">
+			<img id='A28' src="../assets/A28.png" height="200px" width="160px">
+			<img id='A29' src="../assets/A29.png" height="200px" width="160px">
+			<img id='A30' src="../assets/A30.png" height="200px" width="160px">
+			<img id='A31' src="../assets/A31.png" height="200px" width="160px">
+		</div>
+			<img id='A32' src="../assets/A32.png" height="200px" width="160px"><!--最后一张-->
+
+		<!--撕下来的-->
+		<div class="B"><img class='B1' src="../assets/B1.png" height="168px" width="125px" onclick="count(1)" id="1"></div>
+		<div class="B"><img class='B2' src="../assets/B2.png" height="168px" width="125px" onclick="count(2)" id="2"></div>
+		<div class="B"><img class='B3' src="../assets/B3.png" height="168px" width="125px" onclick="count(3)" id="3"></div>
+		<!--硫酸纸--><div class="B"><img class='B4' src="../assets/B4.2.png" height="168px" width="125px" onclick="count(32)" id="32"></div>
+		<div class="B"><img class='B4' src="../assets/B4.png" height="168px" width="125px" onclick="count(4)" id="4"></div>
+		<div class="B"><img class='B5' src="../assets/B5.png" height="168px" width="125px" onclick="count(5)" id="5"></div>
+		<!--照片--><div class="B"><img class='B6' id='C1' src="../assets/C1.jpg" height="56.347px" width="80px" onclick="count(39)"></div>
+		<div class="B"><img class='B6' src="../assets/B6.png" height="168px" width="125px" onclick="count(6)" id="6"></div>
+		<div class="B"><img class='B7' src="../assets/B7.png" height="168px" width="125px" onclick="count(7)" id="7"></div>
+		<div class="B"><img class='B8' src="../assets/B8.png" height="168px" width="125px" onclick="count(8)" id="8"></div>
+		<!--照片--><div class="B"><img class='B9' id='C2' src="../assets/C2.jpg" height="56.825px" width="80px" onclick="count(40)"></div>
+		<!--硫酸纸--><div class="B"><img class='B9' src="../assets/B9.2.png" height="168px" width="125px" onclick="count(33)" id="33"></div>
+		<div class="B"><img class='B9' src="../assets/B9.png" height="168px" width="125px" onclick="count(9)" id="9"></div>
+		<div class="B"><img class='B10' src="../assets/B10.png" height="168px" width="125px" onclick="count(10)" id="10"></div>
+		<div class="B"><img class='B11' src="../assets/B11.png" height="168px" width="125px" onclick="count(11)" id="11"></div>
+		<div class="B"><img class='B12' src="../assets/B12.png" height="168px" width="125px" onclick="count(12)" id="12"></div>
+		<div class="B"><img class='B13' src="../assets/B13.png" height="168px" width="125px" onclick="count(13)" id="13"></div>
+		<div class="B"><img class='B14' src="../assets/B14.png" height="168px" width="125px" onclick="count(14)" id="14"></div>
+		<div class="B"><img class='B15' src="../assets/B15.png" height="168px" width="125px" onclick="count(15)" id="15"></div>
+		<!--照片--><div class="B"><img class='B16' id='C3' src="../assets/C3.jpg" height="56.108px" width="80px" onclick="count(41)"></div>
+		<div class="B"><img class='B16' src="../assets/B16.png" height="168px" width="125px" onclick="count(16)" id="16"></div>
+		<div class="B"><img class='B17' src="../assets/B17.png" height="168px" width="125px" onclick="count(17)" id="17"></div>
+		<!--硫酸纸--><div class="B"><img class='B18' src="../assets/B18.2.png" height="168px" width="125px" onclick="count(34)" id="34"></div>
+		<div class="B"><img class='B18' src="../assets/B18.png" height="168px" width="125px" onclick="count(18)" id="18"></div>
+		<div class="B"><img class='B19' src="../assets/B19.png" height="168px" width="125px" onclick="count(19)" id="19"></div>
+		<div class="B"><img class='B20' src="../assets/B20.png" height="168px" width="125px" onclick="count(20)" id="20"></div>
+		<div class="B"><img class='B21' src="../assets/B21.png" height="168px" width="125px" onclick="count(21)" id="21"></div>
+		<!--硫酸纸--><div class="B"><img class='B22' src="../assets/B22.2.png" height="168px" width="125px" onclick="count(35)" id="35"></div>
+		<div class="B"><img class='B22' src="../assets/B22.png" height="168px" width="125px" onclick="count(22)" id="22"></div>
+		<!--照片--><div class="B"><img class='B23' id='C4' src="../assets/C4.png" height="64.918px" width="80px" onclick="count(42)"></div>
+		<div class="B"><img class='B23' src="../assets/B23.png" height="168px" width="125px" onclick="count(23)" id="23"></div>
+		<div class="B"><img class='B24' src="../assets/B24.png" height="168px" width="125px" onclick="count(24)" id="24"></div>
+		<div class="B"><img class='B25' src="../assets/B25.png" height="168px" width="125px" onclick="count(25)" id="25"></div>
+		<div class="B"><img class='B26' src="../assets/B26.png" height="168px" width="125px" onclick="count(26)" id="26"></div>
+		<!--硫酸纸--><div class="B"><img class='B27' src="../assets/B27.2.png" height="168px" width="125px" onclick="count(36)" id="36"></div>
+		<div class="B"><img class='B27' src="../assets/B27.png" height="168px" width="125px" onclick="count(27)" id="27"></div>
+		<!--硫酸纸--><div class="B"><img class='B28' src="../assets/B28.2.png" height="168px" width="125px" onclick="count(37)" id="37"></div>
+		<div class="B"><img class='B28' src="../assets/B28.png" height="168px" width="125px" onclick="count(28)" id="28"></div>
+		<!--硫酸纸--><div class="B"><img class='B29' src="../assets/B29.2.png" height="168px" width="125px" onclick="count(38)" id="38"></div>
+		<div class="B"><img class='B29' src="../assets/B29.png" height="168px" width="125px" onclick="count(29)" id="29"></div>
+		<!--照片--><div class="B"><img class='B30' id='C5' src="../assets/C5.png" height="80px" width="60px" onclick="count(43)"></div>
+		<div class="B"><img class='B30' src="../assets/B30.png" height="168px" width="125px" onclick="count(30)" id="30"></div>
+		<div class="B"><img class='B31' src="../assets/B31.png" height="168px" width="125px" onclick="count(31)" id="31"></div>
+
+		<!--影子-->
+		<img class='bg-shadowAbove' src="../assets/bg-shadowAbove.png">
+
+		<!--变暗层-->
+		<div class="shade"></div>
+
+		<!--放大的-->
+		<img class='D' src="../assets/B1.png" height="672px" width="500px" id="D1">
+		<img class='D' src="../assets/B2.png" height="672px" width="500px" id="D2">
+		<img class='D' src="../assets/B3.png" height="672px" width="500px" id="D3">
+		<img class='D' src="../assets/B4.png" height="672px" width="500px" id="D4">
+		<img class='D' src="../assets/B5.png" height="672px" width="500px" id="D5">
+		<img class='D' src="../assets/B6.png" height="672px" width="500px" id="D6">
+		<img class='D' src="../assets/B7.png" height="672px" width="500px" id="D7">
+		<img class='D' src="../assets/B8.png" height="672px" width="500px" id="D8">
+		<img class='D' src="../assets/B9.png" height="672px" width="500px" id="D9">
+		<img class='D' src="../assets/B10.png" height="672px" width="500px" id="D10">
+		<img class='D' src="../assets/B11.png" height="672px" width="500px" id="D11">
+		<img class='D' src="../assets/B12.png" height="672px" width="500px" id="D12">
+		<img class='D' src="../assets/B13.png" height="672px" width="500px" id="D13">
+		<img class='D' src="../assets/B14.png" height="672px" width="500px" id="D14">
+		<img class='D' src="../assets/B15.png" height="672px" width="500px" id="D15">
+		<img class='D' src="../assets/B16.png" height="672px" width="500px" id="D16">
+		<img class='D' src="../assets/B17.png" height="672px" width="500px" id="D17">
+		<img class='D' src="../assets/B18.png" height="672px" width="500px" id="D18">
+		<img class='D' src="../assets/B19.png" height="672px" width="500px" id="D19">
+		<img class='D' src="../assets/B20.png" height="672px" width="500px" id="D20">
+		<img class='D' src="../assets/B21.png" height="672px" width="500px" id="D21">
+		<img class='D' src="../assets/B22.png" height="672px" width="500px" id="D22">
+		<img class='D' src="../assets/B23.png" height="672px" width="500px" id="D23">
+		<img class='D' src="../assets/B24.png" height="672px" width="500px" id="D24">
+		<img class='D' src="../assets/B25.png" height="672px" width="500px" id="D25">
+		<img class='D' src="../assets/B26.png" height="672px" width="500px" id="D26">
+		<img class='D' src="../assets/B27.png" height="672px" width="500px" id="D27">
+		<img class='D' src="../assets/B28.png" height="672px" width="500px" id="D28">
+		<img class='D' src="../assets/B29.png" height="672px" width="500px" id="D29">
+		<img class='D' src="../assets/B30.png" height="672px" width="500px" id="D30">
+		<img class='D' src="../assets/B31.png" height="672px" width="500px" id="D31">
+		<img class='D' src="../assets/B4.2.png" height="672px" width="500px" id="D32">
+		<img class='D' src="../assets/B9.2.png" height="672px" width="500px" id="D33">
+		<img class='D' src="../assets/B18.2.png" height="672px" width="500px" id="D34">
+		<img class='D' src="../assets/B22.2.png" height="672px" width="500px" id="D35">
+		<img class='D' src="../assets/B27.2.png" height="672px" width="500px" id="D36">
+		<img class='D' src="../assets/B28.2.png" height="672px" width="500px" id="D37">
+		<img class='D' src="../assets/B29.2.png" height="672px" width="500px" id="D38">
+		<img class='D' src="../assets/C1.jpg" height="352.171px" width="500px" id="D39">
+		<img class='D' src="../assets/C2.jpg" height="355.153px" width="500px" id="D40">
+		<img class='D' src="../assets/C3.jpg" height="350.673px" width="500px" id="D41">
+		<img class='D' src="../assets/C4.png" height="405.738px" width="500px" id="D42">
+		<img class='D' src="../assets/C5.png" height="500px" width="375.000px" id="D43">
+
+		<!--bgm-->
+		<audio autoplay="autoplay" loop="loop" preload="auto" src="../assets/bgm.mp3"></audio>
+	</body>
+
+	<script type="text/javascript" src="../js/calendar2.js"></script>
+	
+</html>
+
+
+<!--img src="../assets/A(1).png" height="262.9px" width="167.4px"-->
